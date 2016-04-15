@@ -1,0 +1,156 @@
+/*really need to clean this up*/
+
+body {
+    background-color: dimgray;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    color:white;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    margin: auto;
+}
+
+#clock {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#timer {
+    font-size: 2em;
+}
+
+#controls>i, #controls>p {
+    display: inline-block;
+    width: auto;
+}
+
+#controls>i {
+    padding: 15px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+#controls>i:first-child {
+    margin-right: 25px;
+}
+
+#controls>i:nth-child(3) {
+    margin-left: 25px;
+}
+
+#infoText {
+    background-color: white;
+    color: black;
+    border: 4px solid black;
+    padding: 5px;
+    font-weight: bold;
+}
+.settings {
+    margin-top: 15px;
+}
+
+.col-sm-3 {
+   border-right: 10px solid dimgray;
+   text-align: center;
+}
+.col-sm-3:nth-child(2), .col-sm-3:nth-child(3){
+    background-color: black;
+}
+
+.set-timer {
+    font-size: 2.5em;
+}
+.set-timer>p, .set-timer>div {
+        display: inline-block;
+    }
+
+.subtract {
+   float: left;
+}
+
+.add {
+    float: right;
+}
+
+#reset {
+    text-align: center;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: black;
+    font-size: 1.5em;
+}
+
+#timer {
+    background: linear-gradient(90deg, red 100%, dimgray 0%);
+
+}
+@media(min-width: 720px){
+    h1 {
+        width: 40%;
+        padding: 15px;
+        margin-top: 25px;
+    }   
+    
+    #clock {
+        font-size: 2em;
+    }
+    
+    #timer {
+        font-size: 3em;
+    }
+    
+    .set-timer {
+        -ms-user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+    }
+    .subtract, .add {
+        color: black;
+        background-color: white;
+        text-align: center;
+        width: 70px;
+        border-radius: 30%;
+        cursor: pointer;
+    }
+    
+    .subtract:active, .add:active, #reset:active {
+    -ms-transform: scale(.9,.9); 
+    -webkit-transform: scale(.9,.9); 
+    transform: scale(.9,.9);
+    }
+    
+   .disabled {
+        background-color: dimgray;
+        color: gray;
+        cursor: not-allowed;    
+    }
+    .disabled:active {
+        transform: none;
+            -webkit-transform: none; 
+            -moz-transform: none; 
+            -ms-transform: none; 
+            -o-transform: none; 
+    }
+    /*possibly change this to class to allow disabled to work properly?*/
+    #reset {
+        width: 30%;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+    }
+   #timer  {
+    width: 300px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border: 5px solid white;
+    position: relative;
+    }
+    
+ 
+    
+}

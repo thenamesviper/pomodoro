@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Pomodoro Clock</title>
+    <meta charset = "UTF-8" lang="en">
+    <link rel = "stylesheet" href = "reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <h1>
+    Pomodoro Clock
+    </h1>
+    <div id = "clock">
+        <div id = "timer-background">
+            <p id = "timer">0:02</p>
+        </div>
+        <div id = "controls">
+            <i class = "glyphicon glyphicon-pause"></i>
+            <p id = "infoText">Press Play</p>
+            <i class = "glyphicon glyphicon-play"></i>
+        </div>
+    </div>
+    
+    <div class = "container-fluid settings">
+        <div class = "row">
+            <div class = "col-sm-3"></div>
+            <div class = "col-sm-3">
+                <h3>Session Length</h3>
+                <div class = "set-timer">
+                    <div class = "subtract session">-</div>
+                    <p id = "session-length">25</p>    
+                    <div class = "add session">+</div>
+                </div>
+            </div>
+            <div class = "col-sm-3">
+                <h3>Break Length</h3>
+                <div class = "set-timer">
+                    <div class = "subtract break">-</div>
+                    <p id = "break-length">5</p>
+                    <div class = "add break">+</div>
+                </div>
+                    
+            </div>
+            <div class = "col-sm-3"></div>
+        </div>
+    </div>
+    
+    <div id = "reset">Reset Timer</div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src = "pomodoro.js"></script>
+</body>
